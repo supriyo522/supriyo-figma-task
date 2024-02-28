@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accordion Example</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>YAY! It’s BOGO</h1>
+    <section>
+      <div class="wrapper">
+        <p style="margin: 0">
+          <input
+            type="radio"
+            id="unit1"
+            name="quantity"
+            value="1"
+            onclick="toggleOptions('options1')"
+            checked
+          />
+          <label for="unit1">1 Unit <span>10% off</span></label>
+        </p>
+        <p style="margin: 0">$18.00 USD</p>
+      </div>
+      <p class="missing">$24.00 USD</p>
+
+      <div id="options1" class="active">
+        <label for="size1">Size:</label>
+        <select id="size1">
+          <option value="S">S</option>
+          <option value="M">M</option>
+          <option value="L">L</option>
+          <option value="XL">XL</option>
+          <option value="XXL">XXL</option>
+        </select>
+
+        <label for="color1">Color:</label>
+        <select id="color1">
+          <option value="Black">Black</option>
+          <option value="White">White</option>
+          <option value="Blue">Blue</option>
+          <option value="Green">Green</option>
+          <!-- Add other color options as needed -->
+        </select>
+        <br />
+        <label for="size1">Size:</label>
+        <select id="size1">
+          <option value="S">S</option>
+          <option value="M">M</option>
+          <option value="L">L</option>
+          <option value="XL">XL</option>
+          <option value="XXL">XXL</option>
+        </select>
+
+        <label for="color1">Color:</label>
+        <select id="color1">
+          <option value="Black">Black</option>
+          <option value="White">White</option>
+          <option value="Blue">Blue</option>
+          <option value="Green">Green</option>
+          <!-- Add other color options as needed -->
+        </select>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrapper">
+        <p style="margin: 0">
+          <input
+            type="radio"
+            id="unit2"
+            name="quantity"
+            value="2"
+            onclick="toggleOptions('options2')"
+          />
+          <label for="unit2">2 Unit <span>20% off</span></label>
+        </p>
+        <p style="margin: 0">$10.00 USD</p>
+      </div>
+      <p class="missing">$24.00 USD</p>
+
+      <div id="options2">
+        <label for="size2">Size:</label>
+        <select id="size2">
+          <option value="S">S</option>
+          <option value="M">M</option>
+          <option value="L">L</option>
+          <option value="XL">XL</option>
+          <option value="XXL">XXL</option>
+        </select>
+
+        <label for="color2">Color:</label>
+        <select id="color2">
+          <option value="Black">Black</option>
+          <option value="White">White</option>
+          <option value="Blue">Blue</option>
+          <option value="Green">Green</option>
+          <!-- Add other color options as needed -->
+        </select>
+        <br />
+        <label for="size2">Size:</label>
+        <select id="size2">
+          <option value="S">S</option>
+          <option value="M">M</option>
+          <option value="L">L</option>
+          <option value="XL">XL</option>
+          <option value="XXL">XXL</option>
+        </select>
+
+        <label for="color2">Color:</label>
+        <select id="color2">
+          <option value="Black">Black</option>
+          <option value="White">White</option>
+          <option value="Blue">Blue</option>
+          <option value="Green">Green</option>
+          <!-- Add other color options as needed -->
+        </select>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrapper">
+        <p style="margin: 0">
+          <input
+            type="radio"
+            id="unit3"
+            name="quantity"
+            value="3"
+            onclick="toggleOptions('options3')"
+          />
+          <label for="unit3">3 Unit <span>Special discount</span></label>
+        </p>
+        <p style="margin: 0">$24.00 USD</p>
+      </div>
+      <p class="missing">$24.00 USD</p>
+
+      <div id="options3">
+        <label for="size3">Size:</label>
+        <select id="size3">
+          <option value="S">S</option>
+          <option value="M">M</option>
+          <option value="L">L</option>
+          <option value="XL">XL</option>
+          <option value="XXL">XXL</option>
+        </select>
+
+        <label for="color3">Color:</label>
+        <select id="color3">
+          <option value="Black">Black</option>
+          <option value="White">White</option>
+          <option value="Blue">Blue</option>
+          <option value="Green">Green</option>
+          <!-- Add other color options as needed -->
+        </select>
+        <br />
+        <label for="size3">Size:</label>
+        <select id="size3">
+          <option value="S">S</option>
+          <option value="M">M</option>
+          <option value="L">L</option>
+          <option value="XL">XL</option>
+          <option value="XXL">XXL</option>
+        </select>
+
+        <label for="color3">Color:</label>
+        <select id="color3">
+          <option value="Black">Black</option>
+          <option value="White">White</option>
+          <option value="Blue">Blue</option>
+          <option value="Green">Green</option>
+          <!-- Add other color options as needed -->
+        </select>
+      </div>
+    </section>
+    <div class="free">
+      <p style="margin: 0; background: #ff6b82">Free Delivery</p>
+      <p style="margin: 0">Total:$18.00 USD</p>
+    </div>
+    <br />
+    <button class="btn">+ Add to Cart</button>
+    <p style="text-align: right">@ Powered by Pumper</p>
+    <script src="script.js"></script>
+  </body>
+</html>

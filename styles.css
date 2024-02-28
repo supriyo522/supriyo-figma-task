@@ -1,0 +1,43 @@
+h1 {
+  text-decoration: underline;
+  background: #ff6b82;
+}
+body {
+  text-align: center;
+  /* margin: 0; */
+}
+section {
+  margin-bottom: 20px;
+  border: 2px solid #ff6b82; /* Add border style */
+  padding: 10px; /* Add padding for better spacing */
+  background-color: antiquewhite;
+}
+.wrapper,
+.free {
+  display: flex;
+  justify-content: space-between;
+}
+div {
+  display: none;
+}
+
+div.active {
+  display: block;
+}
+span {
+  background: #ff6b82;
+}
+.missing {
+  margin: 0;
+  text-align: right;
+  text-decoration: line-through;
+  color: gray;
+}
+.btn {
+  background: #ff6b82;
+  width: 342px;
+  height: 40px;
+  radius: 4px;
+  padding: 10px;
+  gap: 8px;
+}
